@@ -32,7 +32,7 @@
         4. Create a launcher shortcut for Eclipse (this might not be necessary as extracting it might already do this so check before running this command!)
          `sudo gedit /usr/share/applications/eclipse.desktop`
         5. Make sure that the file you just created has the following:   
-         `[Desktop Entry]  
+         ***[Desktop Entry]  
          Name=Eclipse 4  
          Type=Application   
          Exec=/opt/eclipse/eclipse   
@@ -41,7 +41,7 @@
          Comment=Integrated Development Environment   
          NoDisplay=false   
          Categories=Development;IDE;   
-         Name[en]=Eclipse`
+         Name[en]=Eclipse***
 
 ## Chapter 2. Web Services Description Language (WSDL)
 
