@@ -26,7 +26,7 @@
 * Setting up a Runtime Architecture
     * Installing Eclipse on Ubuntu 14.04
         1. Install Java
-        2. Download Eclipse for Java EE from (http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1)[http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1] 
+        2. Download Eclipse for Java EE from [http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1) 
 
 ## Chapter 2. Web Services Description Language (WSDL)
 
