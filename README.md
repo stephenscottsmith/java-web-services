@@ -24,7 +24,7 @@
         * Tags are placed inside `<message>` like this and is closed like `</message>`
         * Key difference between XML and HTML: XML files **DO NOT** have preset tags
 * Setting up a Runtime Architecture
-    * Installing Eclipse on Ubuntu 14.04
+    * Installing Eclipse on Ubuntu 14.04 - [http://ubuntuhandbook.org/index.php/2014/06/install-latest-eclipse-ubuntu-14-04/](http://ubuntuhandbook.org/index.php/2014/06/install-latest-eclipse-ubuntu-14-04/)
         1. Install Java
         2. Download Eclipse for Java EE from [http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1) 
         3. Extract Eclipse to /opt/ for Global Use  
@@ -42,6 +42,9 @@
          NoDisplay=false   
          Categories=Development;IDE;   
          Name[en]=Eclipse***
+        6. Run Eclipse from the Unity Dash search or go to the /opt/eclipse to perform the following:   
+         `./eclipse`
+
 
 ## Chapter 2. Web Services Description Language (WSDL)
 
