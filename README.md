@@ -27,6 +27,21 @@
     * Installing Eclipse on Ubuntu 14.04
         1. Install Java
         2. Download Eclipse for Java EE from [http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1) 
+        3. Extract Eclipse to /opt/ for Global Use  
+         `cd /opt/ && sudo tar -zxvf ~/Downloads/eclipse-*.tar.gz`
+        4. Create a launcher shortcut for Eclipse (this might not be necessary as extracting it might already do this so check before running this command!)
+         `sudo gedit /usr/share/applications/eclipse.desktop`
+        5. Make sure that the file you just created has the following:   
+         `[Desktop Entry]  
+         Name=Eclipse 4  
+         Type=Application   
+         Exec=/opt/eclipse/eclipse   
+         Terminal=false   
+         Icon=/opt/eclipse/icon.xpm   
+         Comment=Integrated Development Environment   
+         NoDisplay=false   
+         Categories=Development;IDE;   
+         Name[en]=Eclipse`
 
 ## Chapter 2. Web Services Description Language (WSDL)
 
