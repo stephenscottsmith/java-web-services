@@ -22,6 +22,7 @@
         * Tags are defined by the author
     * Principles of XML
         * Tags are placed inside `<message>` like this and is closed like `</message>`
+        * Key difference between XML and HTML: XML files **DO NOT** have preset tags
 
 ## Chapter 2. Web Services Description Language (WSDL)
 
