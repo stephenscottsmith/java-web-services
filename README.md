@@ -23,6 +23,10 @@
     * Principles of XML
         * Tags are placed inside `<message>` like this and is closed like `</message>`
         * Key difference between XML and HTML: XML files **DO NOT** have preset tags
+* Setting up a Runtime Architecture
+    * Installing Eclipse on Ubuntu 14.04
+        1. Install Java
+        2. Download Eclipse for Java EE from (http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1)[http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1] 
 
 ## Chapter 2. Web Services Description Language (WSDL)
 
