@@ -46,11 +46,28 @@
          Name[en]=Eclipse***
         6. Run Eclipse from the Unity Dash search or go to the /opt/eclipse to perform the following:   
          `./eclipse`
-    * Eclipse Environment
+    * Eclipse Environment Layout
         * Central Panel (or Code Panel)
         * Left Pane (Project Explorer)
+        * Right Pane (Outline and Task List)
         * Bottom Panel - where output will show as well as options for how and where the program will run
-* Creating a Simple Service
+    * Install Glassfish Tools and Starting a Server
+        * Recommend downloading and unzipping to C:\Glassfish from [https://glassfish.java.net/download.html](https://glassfish.java.net/download.html)
+        * Will need to point Mars Eclipse to correct installation of JDK and Glassfish 
+* Creating a Simple 
+    * File -> New ->
+        * JAXB is a project set up for web services 
+        * To build web service from scratch go to Web -> Dynamic Web Project
+    * In the newly created Dynamic Web Project
+        * JAX-WS - folder where any web services we have created would reside, but is blank for our basic project so far
+        * First thing to do in creating a web service is to create a **Java Server Page (JSP)**
+            * JSP is a simple web page used to display the web services created in our project
+            * Written in HTML
+        * Creating Packages and Classes of Code
+            * Code must contain 3 essential elements
+                1. Designate it as a webservice by `@WebService`
+                2. Public constructor class that takes no inputs
+                3. The actual code
 * Building, Packaging, and Deploying your Service
 * Challenge: Build a Simple Web Service
 * Solution: Build a Simple Web Service
