@@ -25,9 +25,10 @@
         * Key difference between XML and HTML: XML files **DO NOT** have preset tags
 * Setting up a Runtime Architecture
     * Installing Eclipse on Ubuntu 14.04 - [http://ubuntuhandbook.org/index.php/2014/06/install-latest-eclipse-ubuntu-14-04/](http://ubuntuhandbook.org/index.php/2014/06/install-latest-eclipse-ubuntu-14-04/)
-        1. Install Java   
+        1. Install Java from:  
          [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-        2. Download Eclipse for Java EE from [http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1) 
+        2. Download Eclipse for Java EE from:   
+         [http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1) 
         3. Extract Eclipse to /opt/ for Global Use  
          `cd /opt/ && sudo tar -zxvf ~/Downloads/eclipse-*.tar.gz`
         4. Create a launcher shortcut for Eclipse (this might not be necessary as extracting it might already do this so check before running this command!)
