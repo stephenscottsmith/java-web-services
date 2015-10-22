@@ -81,6 +81,22 @@
 
 ## Chapter 2. Web Services Description Language (WSDL)
 * What is WSDL?
+    * WSDL is an XML based language used by web services to describe the functionality they offer
+    * Provides all the information that a computer needs in order to kinow how to call the web service, what parameters to pass, and what data structures they expect to get back
+    * Info Required:
+        * Programming language
+        * Method location
+        * Data types of the inputs
+        * Data types of the outputs
+    * WSDL Message Parts
+        * Service
+            * Contains direct references to endpoints, their bindings, and their locations
+        * Binding
+            * Specifies the interface and tells the reader what type of SOAP binding style and transport will be used
+        * Interface 
+            * Meat of the message
+            * Defines the web service itself, including all of the methods
+        * Types
 * Understanding the Basic Syntax
 * Exploring WSDL
 * Implementing a Web Service
