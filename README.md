@@ -25,7 +25,8 @@
         * Key difference between XML and HTML: XML files **DO NOT** have preset tags
 * Setting up a Runtime Architecture
     * Installing Eclipse on Ubuntu 14.04 - [http://ubuntuhandbook.org/index.php/2014/06/install-latest-eclipse-ubuntu-14-04/](http://ubuntuhandbook.org/index.php/2014/06/install-latest-eclipse-ubuntu-14-04/)
-        1. Install Java
+        1. Install Java   
+         [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
         2. Download Eclipse for Java EE from [http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1) 
         3. Extract Eclipse to /opt/ for Global Use  
          `cd /opt/ && sudo tar -zxvf ~/Downloads/eclipse-*.tar.gz`
@@ -48,6 +49,10 @@
         * Central Panel (or Code Panel)
         * Left Pane (Project Explorer)
         * Bottom Panel - where output will show as well as options for how and where the program will run
+* Creating a Simple Service
+* Building, Packaging, and Deploying your Service
+* Challenge: Build a Simple Web Service
+* Solution: Build a Simple Web Service
 
 
 ## Chapter 2. Web Services Description Language (WSDL)
