@@ -77,17 +77,52 @@
 * Solution: Build a Simple Web Service
     * Created a fibonacci package in the src folder
     * It's important to create a package rather than the default package for web services. **If you use the default package you will get a Invocation Target Exception during testing!**
-    * 
-
+    * Can choose add/remove when deploying to make sure you are deploying what you want
 
 ## Chapter 2. Web Services Description Language (WSDL)
+* What is WSDL?
+* Understanding the Basic Syntax
+* Exploring WSDL
+* Implementing a Web Service
+* Adding Multiple Parts to WSDL
+* Challenge: Create a One-Way WSDL Message
+* Solution: Create a One-Way WSDL Message
 
 ## Chapter 3. Simple Object Access Protocol (SOAP)
+* Introducing SOAP and SOAP Toolkits
+* Exploring the Syntax and Design of SOAP
+* Comparing SOAP 1.1 to SOAP 1.2
+* Challange: Add a SOAP Binding
+* Solution: Add a SOAP Binding
 
 ## Chapter 4. Representational State Transfer (REST)
+* What is REST?
+* Exploring the Syntax and Design of REST
+* Creating a REST Root Resource Class
+* Using MIME types with RESTful Messages
+* Challenge: Create a REST Root Resource Class
+* Solution: Create a REST Root Resource Class
 
 ## Chapter 5. Programming a Web Service in Java EE
+* Specifying the Methods and Structure Needed for the Web Service
+* Creating the Web Service Endpoint
+* Testing a Web Service Without a Client
+* Creating an Application Client
+* Challenge: Expand the RESTful Web Service
+* Solution: Expand the RESTful Web Service
 
 ## Chapter 6. Improving Your Java EE Code
+* Debugging your Web Services
+* Optimizing your Code
+* Sending Different Data Types
+* Enabling Security and Encryption
+* Challenge: Debug and Optimize a Sample Web Service
+* Solution: Debug and Optimize a Sample Web Service
 
 ## Chapter 7. Extensions
+* Web Services Distributed Management (WSDM)
+* Web Services Invocation Framework (WSIF)
+* Bus-Enabled Web Services
+
+## Conclusion
+* Where to go from here...
