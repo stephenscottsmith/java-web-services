@@ -44,6 +44,10 @@
          Name[en]=Eclipse***
         6. Run Eclipse from the Unity Dash search or go to the /opt/eclipse to perform the following:   
          `./eclipse`
+    * Eclipse Environment
+        * Central Panel (or Code Panel)
+        * Left Pane (Project Explorer)
+        * Bottom Panel - where output will show as well as options for how and where the program will run
 
 
 ## Chapter 2. Web Services Description Language (WSDL)
