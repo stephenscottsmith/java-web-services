@@ -69,8 +69,15 @@
                 2. Public constructor class that takes no inputs
                 3. The actual code
 * Building, Packaging, and Deploying your Service
+    * A web service must run on a service and accessed by a client
+    * Restart the server by right-clicking and hitting "Publish"
+    * Glassfish has a built-in test server - **MAKE SURE SERVER IS SYNCHRONIZED AND STARTED**
 * Challenge: Build a Simple Web Service
+    * Add a fibonacci function
 * Solution: Build a Simple Web Service
+    * Created a fibonacci package in the src folder
+    * It's important to create a package rather than the default package for web services. **If you use the default package you will get a Invocation Target Exception during testing!**
+    * 
 
 
 ## Chapter 2. Web Services Description Language (WSDL)
