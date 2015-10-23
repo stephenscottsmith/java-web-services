@@ -98,6 +98,8 @@
             * Defines the web service itself, including all of the methods
         * Types
 * Understanding the Basic Syntax
+    * Written in XML format
+    * 
 * Exploring WSDL
 * Implementing a Web Service
 * Adding Multiple Parts to WSDL
