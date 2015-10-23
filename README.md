@@ -161,7 +161,40 @@
 
 ## Chapter 3. Simple Object Access Protocol (SOAP)
 * Introducing SOAP and SOAP Toolkits
+    * XML based protocol that allows user to exchange info via other protocols such as HTTP
+    * Binding used with WSDL documents
+    * Location and Metadata
+    * SOAP vs. RPC
+        * SOAP
+            * Designed for remote communication
+            * Platform independent and universally recognized
+            * Language-independent
+            * Popular SOAP Toolkit: Java API for XML Web Services (JAX-WS)
+        * RPC
+            * Designed for computesr within a small network
+            * Blocked by some firewalls
+            * Language-dependent
 * Exploring the Syntax and Design of SOAP
+    * SOAP Elements
+        * In order for XML document to be used as a SOAP message, it must contain 4 elements:
+            1. Envelope - a container for the document that identifies it as a SOAP message
+                * Required in order to inform recipient of how to use the document
+            2. Header (optional) - contains descriptive metadata for the main document
+                * Official to aid in searching and/or modifying large SOAP messages
+            3. Body - contains all of the calls and their responses
+            4. Error-Checking - makes it possible for the sender to see if anything went wrong during the transfer of the SOAP message
+        * Sample SOAP Message:   
+        ***  
+        <?xml version='1.0' ?>  
+        <env:Envelope xmlns:env=http://w3.org/2003/05/soap-envelope>  
+        <env:Header>
+        <env:EncodingStyle>  
+        <env:role http://w3.org/2003/05/soap-envelope/ultimateReceiver>  
+        <env:mustUnderstand="false">  
+        <env:relay>  
+
+        <env:body> // Message to transfer 
+        ***
 * Comparing SOAP 1.1 to SOAP 1.2
 * Challange: Add a SOAP Binding
 * Solution: Add a SOAP Binding
