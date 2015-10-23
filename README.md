@@ -99,8 +99,29 @@
         * Types
 * Understanding the Basic Syntax
     * Written in XML format
-    * 
+    * To access the Glassfish WSDL:
+        * Reopen the admin console at the url -> Applications -> HelloWorld (or your package) -> View Endpoints -> WSDL link -> first http link because we don't have security enabled
+        * Root Tag: `<definitions>`
+            * Contains info where and how each of the main components are defined
+        * `<types>` - contains the schema foor this web service
+        * import schemaLocation should be port 8080
+        * `<message>` tags define one possible transfer of data
+            * 2 per method: 1 for the input, 1 for the response
+        * `<portType>` constructs an HTTP URL of the package class and method identifiers for each method to be used by the accessing program
+        * `<binding>` lists the methods with their SOAP 
+        * `<service>` gives the actual URL where the service resides
 * Exploring WSDL
+    * If we want to customize a WSDL file first write a simple throwaway method and let GlassFish automatically generate a WSDL file. 
+        * This takes care of the complicated definitions, URLs, port numbers, etc. 
+        * Now you can customize the WSDL file by only changing the parts that aren't already needed
+    * Things that can be customized:
+        * `@WebService` can have a name, portName, service URL, or the package containing the service
+            * `@WebService(name="newname")`
+        * `@WebMethod()`
+            * Can set an action - plain text string interpreted by the WSDL as an action in the operation
+            * Can customize operation name
+            * Can exclude to designate certain methods not displayed in the WSDL
+            * `@WebMethod(action="sample", operationName="name", exclude)`
 * Implementing a Web Service
 * Adding Multiple Parts to WSDL
 * Challenge: Create a One-Way WSDL Message
