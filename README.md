@@ -185,15 +185,15 @@
             4. Error-Checking - makes it possible for the sender to see if anything went wrong during the transfer of the SOAP message
         * Sample SOAP Message:   
         ***  
-        <?xml version='1.0' ?>  
-        <env:Envelope xmlns:env=http://w3.org/2003/05/soap-envelope>  
-        <env:Header>
-        <env:EncodingStyle>  
-        <env:role http://w3.org/2003/05/soap-envelope/ultimateReceiver>  
-        <env:mustUnderstand="false">  
-        <env:relay>  
+        > <?xml version='1.0' ?>  
+        > <env:Envelope xmlns:env=http://w3.org/2003/05/soap-envelope>  
+        > <env:Header>
+        > <env:EncodingStyle>  
+        > <env:role http://w3.org/2003/05/soap-envelope/ultimateReceiver>  
+        > <env:mustUnderstand="false">  
+        > <env:relay>  
 
-        <env:body> // Message to transfer 
+        > <env:body> // Message to transfer 
         ***
 * Comparing SOAP 1.1 to SOAP 1.2
 * Challange: Add a SOAP Binding
