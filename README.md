@@ -123,9 +123,41 @@
             * Can exclude to designate certain methods not displayed in the WSDL
             * `@WebMethod(action="sample", operationName="name", exclude)`
 * Implementing a Web Service
+    * Duplicate all the entries of an existing method in the XML file
+    * Need 2 message tags (1 for input, 1 for output)
+    * Can copy 1 of the operation tags and designate their message attributes
+    * **Common to customize the WSDL with all of your methods and classes first, then write the code for them**
 * Adding Multiple Parts to WSDL
+    * Allows a single request to return multiple pieces of data
+    * Delineates different parts of a single message
+        * metadata
+        * headers and footers
+    * Complex Type Element
+        * Allows you to define a more complicated message
+        * Basic Syntax
+            * `<xs:element name="name"></xs:element>`
+            * Inisde: `<xs:complexType></xs:complexType>`
+                * Has several attributes
+                    * The ID and Name attributes create separate identifiers for ease of reference
+                    * Abstract - if true, then it cannot be used as part of an instance document
+                    * Block, Final
+                        * Extension
+                        * Restriction
+                        * All
+                    * Mixed
+                * Inside: `<xs:sequence></xs:sequence>`
+                    * Inside: `<xs:element name="name" type="type"/>`
 * Challenge: Create a One-Way WSDL Message
+    * Create a WSDL file for StockData
+    * Methods: 
+        1. Get price of a stock
+        2. Update or change stock price
+        3. Add a new stock to the database
 * Solution: Create a One-Way WSDL Message
+    * 3 Pieces for Each Method
+        1. Should have 2 entries in the message section, one for the method itself and one for the response
+        2. Operation Name listed under the port type tab
+        3. Specify the bindings and encodings for the message
 
 ## Chapter 3. Simple Object Access Protocol (SOAP)
 * Introducing SOAP and SOAP Toolkits
