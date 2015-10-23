@@ -219,7 +219,27 @@
         3. System URI Formats
         4. Format via XML messages or JSON
 * Exploring the Syntax and Design of REST
+    * REST uses a different 
+    * 4 Main HTTP Methods:
+        1. GET
+            * Example: `GET /users/name HTTP/1.1`
+                * `GET`: specifies what the server should do with the URI
+                * `/users/name`: URI which uses directory structure to specify where to look for information
+                * `HTTP/1.1`: tells the server what format you're sending your request in
+            * Can have the following lines under the above example:
+                * `HOST: servername`: specifies the server
+                * `Accept: text/xml`: specifies the return data or `application/json` to return a json file
+        2. PUT
+        3. POST
+        4. DELETE
+    * Best Practices
+        * Requests should be Idempotent: running the request again with the same parameters should cause no further change
 * Creating a REST Root Resource Class
+    1. Create a class
+    2. Designate class's path via: `@Path(value="restful path")`
+    3. Inside the class will be the methods that can operate on this path   
+        `@GET`   
+        `@Produces("text/xml")`  
 * Using MIME types with RESTful Messages
 * Challenge: Create a REST Root Resource Class
 * Solution: Create a REST Root Resource Class
