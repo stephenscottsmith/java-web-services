@@ -183,24 +183,41 @@
                 * Official to aid in searching and/or modifying large SOAP messages
             3. Body - contains all of the calls and their responses
             4. Error-Checking - makes it possible for the sender to see if anything went wrong during the transfer of the SOAP message
-        * Sample SOAP Message:   
-        ***  
-        > <?xml version='1.0' ?>  
-        > <env:Envelope xmlns:env=http://w3.org/2003/05/soap-envelope>  
-        > <env:Header>
-        > <env:EncodingStyle>  
-        > <env:role http://w3.org/2003/05/soap-envelope/ultimateReceiver>  
-        > <env:mustUnderstand="false">  
-        > <env:relay>  
-
-        > <env:body> // Message to transfer 
-        ***
+        * Sample SOAP Message in tutorial
 * Comparing SOAP 1.1 to SOAP 1.2
+    * SOAP 1.1
+        * Released May 2000
+        * Based on XML 1.0
+        * Only supports HTTP
+        * Supported by JAX-WS
+        * Not compatible with SOAP 1.2
+        * Error Checking
+            * Available tags: faultcode, faultstring, faultactor, detail
+    * SOAP 1.2
+        * Released June 2003
+        * Based on XML Info Set
+        * Supports any protocol that confirms to its framework
+        * Supported by JAX-WS
+        * Compatible with SOAP 1.1
+        * Error Checking
+            * Available tags: code, reason, node, detail, Role
 * Challange: Add a SOAP Binding
+    * Create messages for the Chapter 2 exercise
 * Solution: Add a SOAP Binding
+    * See tutorial
 
 ## Chapter 4. Representational State Transfer (REST)
 * What is REST?
+    * Set of architectural principles that guide the development of web services
+    * Developed in 2000
+    * Advantage over SOAP: much easier to use
+    * Architectural Style, not a standard - no specific format or syntax, "Best Practices"
+    * SOAP and WSDL focus on the methods whereas REST focuses on the system's resources
+    * 4 Basic Design Principeles:
+        1. Uses HTTP methods explicitely (POST, GET, etc.)
+        2. Stateless - allows for parallelization
+        3. System URI Formats
+        4. Format via XML messages or JSON
 * Exploring the Syntax and Design of REST
 * Creating a REST Root Resource Class
 * Using MIME types with RESTful Messages
