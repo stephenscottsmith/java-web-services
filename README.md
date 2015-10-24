@@ -241,29 +241,104 @@
         `@GET`   
         `@Produces("text/xml")`  
 * Using MIME types with RESTful Messages
+    * @Consumes and @Produces control what type of data you can accept and send out
+    * Multipurpose Internet Mail Extension (MIME)
+    * Consider the general format of your messages
+    * Consult the Internet Assigned Numbers Authority 
+    * XML Specification
+        * `Application/XML`
+            * Has more stringent requirements for translating the message from Java to MIME type and is primarily suited for messages that are intended for computers
+        * `text/xml`
+            * Meant to be human-readable with simple strings of data
+    * Converting Data Types
+        * Java.lang.String supports all text media types
+        * java.xml.transform.Source type supports all XML media types
+        * Java's byte arrays, input streams, readers, and files support all media types
 * Challenge: Create a REST Root Resource Class
+    * Create a simple class with GET, PUT, DELETE
 * Solution: Create a REST Root Resource Class
+    * Do not forget that a GET in this requires a @Consumes and @Produces
 
 ## Chapter 5. Programming a Web Service in Java EE
 * Specifying the Methods and Structure Needed for the Web Service
+    * Method to receive data
+    * Back-end database
+    * Method to check data with database
+    * Method to return the results
 * Creating the Web Service Endpoint
+    1. New -> Dynamic Web Project -> MeetingScheduler
+    2. Java Resources -> src folder -> Create new package to hold code "scheduler"
+    3. Create new class "root"
+    4. @POST method both @Consumes and @Produces "text/plain"
 * Testing a Web Service Without a Client
+    * Create new class part of the Scheduler package called "RestTest"
+    * Before even running the application on a server, test by creating a Test class and right-clicking the Test.class -> Run as -> Java Application
 * Creating an Application Client
+    * 4 Basic Steps to Creating a Client Request using the JAX RS API
+        1. `Client c = ClientBuilder.newClient()` - javax.ws.rs.client.Client interface
+        2. `c.target(URI)` - construct and give it a target
+        3. `c.request(MediaType.type)` - create a request 
+        4. `c.get(String.class)` - invoke the request 
 * Challenge: Expand the RESTful Web Service
+    * Add GET method in root class that takes in a date, return a string indicating whether the date is filled
 * Solution: Expand the RESTful Web Service
 
 ## Chapter 6. Improving Your Java EE Code
 * Debugging your Web Services
+    * Eclipse Debugger
+        * Click on the +View icon in top right corrner -> Debug perspective
+    * Admin Console for GlassFish
+        * Monitoring Data -> Instance of your Server -> View log files
 * Optimizing your Code
+    * Should be based on: understandability, flexibility, compatibility
+    * Supporting more data types will make server slower
+    * 10% of the code takes 90% of the time
+    * Never repeat work! - Database accesses are slow!
+    * Structure data in usable form
 * Sending Different Data Types
+    * Only things you have to change in order to support other MIME types is the @produces and @consumes annotations
+    * `@MTOM` - denotes that other media types will be used
 * Enabling Security and Encryption
+    * By default no security is enabled
+    * Can be done by going into the GlashFish server Configuration -> server-config -> Security
+    * Security Manager enabled checked on
+    * Security -> Message Security
+        * HTTPServlet
+            * Default Provider: GFConsoleAuthModule will encrypt data and control access
+            * Default Client Provider: XWS_ServerProvider has additional features
+    * Most important concept in Security and Encryption:
+        * Authentication - who is accessing the service
+        * Authorization - who can access the service?
+        * Confidentiality - who can see messages to and from the service?
+            * Public and private keys
 * Challenge: Debug and Optimize a Sample Web Service
+    * Improve code for data checking service
 * Solution: Debug and Optimize a Sample Web Service
+    * Data that will be accessed a lot should be sorted
 
 ## Chapter 7. Extensions
 * Web Services Distributed Management (WSDM)
+    * a system created to help manage other web services or network enabled hardware devices
+    * Interface with other devices - printers, servers, fax machines
+    * Compatible with many different devices
+    * 2 Standards:
+        1. MUWS (management using web services) - works with servers on other devices
+        2. MOWS (management of web services) - allow you to manage web services remotely
 * Web Services Invocation Framework (WSIF)
+    * Java API for web services description language, that serves as an alternative for SOAP API's
+    * Alternative to SOAP
+    * Interact with representations of services
+    * Even more compatible than SOAP
+        * Multiple bindings
+        * Dynamic Invocation
+    * Adheres to "Black Box"
+        * API calls are technology independent
 * Bus-Enabled Web Services
+    * Service Integration Bus - a single architecture that acts as a communication network for multiple servers and other devices
+    * Advantages 
+        * Compatibility - any type of web service
+        * Flexibility - asynchronous messaging
+        * Control - convert between internal applications and web services
 
 ## Conclusion
 * Where to go from here...
